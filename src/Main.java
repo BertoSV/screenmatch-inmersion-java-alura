@@ -31,12 +31,24 @@ public class Main {
             System.out.println("Pelicula retro que vale la pena ver!");
         }
 
+        /*
         for (int i = 0; i < 3; i++) {
             Scanner teclado = new Scanner (System.in);
             System.out.println("Ingresa la evaluacion que le darias a Matrix: ");
             double notaMatrix = teclado.nextDouble();
             mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix;
         }
+        */
+
+        int i = 0;
+        Scanner teclado = new Scanner(System.in);
+        while (i < 3) {
+            System.out.println("Ingresa la evaluacion que le darias a Matrix: ");
+            double notaMatrix = teclado.nextDouble();
+            mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix;
+            i++;
+        }
+
         System.out.printf("La media de la pelicula Matrix calculada por el usuario es %.2f%n", mediaEvaluacionUsuario / 3);
     }
 }
